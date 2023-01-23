@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="redcross">
+        <div class="head">
+            <img src="footer.jpg" width="350" height="350" alt="">
+        </div>
+        <div class="inputs">
+            <input type="text" id="firstName" placeholder="VOORNAAM" maxlength="30"/>
+            <input type="text" id="lastName" placeholder="ACHTERNAAM" maxlength="30"/>
+            <input placeholder="TELEFOON NUMMER" type="number" id="count" maxlength="10"/>
+            <input type="email" id="email" placeholder="JOHN@RODEKRUIS.NL">
+            <input type="date" id="birthday" name="birthday">
+            <input placeholder="V-NUMMER" type="number" id="vnummer" maxlength="10"/>
+            <input placeholder="KAMERNUMMER" type="number" id="roomnumber" maxlength="3"/>
+            <select name="select" id="select">
+            <option value="yes">Yes</option>
+            <option value="no" selected>No</option>
+            </select>
+            <button id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="search" >
+                <input onkeyup="getSearchName(this.value)" type="text" id="inputSearchName" placeholder="ZOEK OP NAAM.." maxlength="40"/>
+                <input onkeyup="getSearchVnummer(value)" type=" number" id="inputSearchVnummer" placeholder="ZOEK OP V-NUMMER.." maxlength="10"/>
+            </div>
+        </div>
+            
+        <div id="deleteAllStorage"></div>
+            <table>
+                <tr>
+                    <th class="id">ID</th>
+                    <th>FIRST NAME</th>
+                    <th>LAST NAME</th>
+                    <th>PHONE NUMBER</th>
+                    <th>E-MAIL</th>
+                    <th>DATE OF BIRTH</th>
+                    <th>V-NUMMER</th>
+                    <th>ROOM NUMBER</th>
+                    <th>AVAILABLE</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <span class="up">UP</span>
+    <script src = "index.js"></script>
+</body>
+</html>
