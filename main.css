@@ -20,12 +20,11 @@ input {
     width: 100%;
     height: 35px;
     outline: none;
-    border: 2;
+    border: 0;
     box-shadow:0 0 20px 6px rgba(0,0,0,0.06);
     background: lightgray;
     margin: 4px 0;
     border-radius: 7px;
-    border-width: 1px;
     padding: 4px;
     font-size: large;
     font-family: acme;
