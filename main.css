@@ -1,5 +1,4 @@
-@media all
-{
+
 *{
     margin: 0;
     padding: 0;
@@ -178,4 +177,3 @@ table,td,th{
   label input:checked ~ span:after {
     display:block;
   }
-}
