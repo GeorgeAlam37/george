@@ -8,7 +8,7 @@ body{
     font-size: large;
 }
 .redcross{
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 .head{
@@ -25,6 +25,7 @@ input {
     background: lightgray;
     margin: 4px 0;
     border-radius: 7px;
+    border-width: 1px;
     padding: 4px;
     font-size: large;
     font-family: acme;
