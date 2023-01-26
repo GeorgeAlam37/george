@@ -37,6 +37,7 @@ create.onclick = function(){
             alert('Your Guest Has Been Created');
             }else{
             getData[ttt] = newData;
+            alert('Your Guest Has Been Updated');
             mood = 'Create'
             create.innerHTML = 'Create';
             location.reload()
