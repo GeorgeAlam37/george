@@ -34,6 +34,7 @@ create.onclick = function(){
     if(firstName.value != '' && lastName.value != '' && vnummer.value != ''){
         if(mood === 'Create'){
             getData.push(newData);
+            alert('Your Guest Has Been Created');
             }else{
             getData[ttt] = newData;
             mood = 'Create'
@@ -91,6 +92,7 @@ function deleteItem(i){
     getData.splice(i,1)
     localStorage.Guest = JSON.stringify(getData)
     showData()
+    alert('Your Guest Has Been Deleted');
 }
 //delete all items button
 deleteAllStorage.onclick = function(){
